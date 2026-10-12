@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Headvane</title>
+<meta name="description" content="How to get help with Headvane, and what to include.">
+<style>
+:root{
+  --bg:#f4f5f7; --surface:#ffffff; --sunken:#eceef1; --border:#dfe3e8;
+  --text:#14171c; --muted:#5b6470; --accent:#5a3ec8; --on-accent:#ffffff;
+  --success:#0d7a62; --radius:10px;
+  --sans:Inter,-apple-system,BlinkMacSystemFont,system-ui,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#15171b; --surface:#1e2127; --sunken:#101216; --border:#2e333b;
+  --text:#f0f2f5; --muted:#a7b0bb; --accent:#b9a5ff; --on-accent:#191036;
+  --success:#4fd1b0;
+}}
+:root[data-theme=dark]{
+  --bg:#15171b; --surface:#1e2127; --sunken:#101216; --border:#2e333b;
+  --text:#f0f2f5; --muted:#a7b0bb; --accent:#b9a5ff; --on-accent:#191036;
+  --success:#4fd1b0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.65;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:48px 16px 96px}
+header{margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--border)}
+.mark{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);
+  font-weight:700;font-size:17px;letter-spacing:-.01em}
+.mark span[aria-hidden]{display:grid;place-items:center;width:28px;height:28px;border-radius:8px;
+  background:var(--accent);color:var(--on-accent);font-size:15px}
+h1{font-size:28px;line-height:1.25;font-weight:700;letter-spacing:-.02em;margin:24px 0 8px}
+h2{font-size:19px;font-weight:650;letter-spacing:-.01em;margin:36px 0 10px}
+h3{font-size:15px;font-weight:650;margin:22px 0 6px}
+p,ul,ol{margin:0 0 14px}
+ul,ol{padding-left:22px}
+li{margin:0 0 6px}
+a{color:var(--accent)}
+.sub{color:var(--muted);font-size:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px 22px;margin:0 0 18px}
+.plain{background:var(--sunken);border-radius:var(--radius);padding:16px 18px;margin:0 0 18px;
+  font-size:14px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin:0 0 18px;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+th{font-weight:650;color:var(--muted);font-size:12.5px;text-transform:uppercase;letter-spacing:.04em}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;
+  background:var(--sunken);padding:1px 5px;border-radius:4px}
+nav.pages{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+nav.pages a{display:inline-block;font-size:13.5px;text-decoration:none;color:var(--muted);
+  border:1px solid var(--border);border-radius:999px;padding:5px 13px;background:var(--surface)}
+nav.pages a[aria-current=page]{color:var(--on-accent);background:var(--accent);border-color:var(--accent)}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--border);
+  color:var(--muted);font-size:13.5px}
+footer a{color:var(--muted)}
+.yes{color:var(--success);font-weight:650}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="mark" href="index.html"><span aria-hidden="true">&#9652;</span>Headvane</a>
+  <nav class="pages"><a href="index.html">Headvane</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html" aria-current=page>Support</a></nav>
+</header>
+<main>
+
+<h1>Support</h1>
+<p class="sub">One person reads this mailbox. Plain description beats a bug report form.</p>
+
+<div class="card">
+<p><a href="mailto:support@headvane.com">support@headvane.com</a></p>
+<p class="sub">If your question is about a purchase, include the email address you bought
+with or the payment reference. If it is about a licence key, include the key.</p>
+</div>
+
+<h2>Before you write</h2>
+
+<h3>Focus is not moving at all</h3>
+<ol>
+  <li>Check the menu bar item. It says why it is not switching — waiting for you to stop
+  typing, cannot see you, paused, and so on. That line is usually the answer.</li>
+  <li>Check that <strong>Accessibility</strong> is granted in System Settings &rsaquo;
+  Privacy &amp; Security &rsaquo; Accessibility. Without it, no app can focus another
+  app's windows. If you have just updated Headvane, macOS sometimes needs the switch turned
+  off and on again.</li>
+  <li>Check that the screen you are turning to has been set up. A monitor you added after
+  setting up is not yet calibrated.</li>
+</ol>
+
+<h3>It switches when I did not mean it to</h3>
+<p>Raise <strong>How long a look must last</strong> and <strong>How far you must
+turn</strong> in Settings. Both make the app more reluctant. Most people who find it
+twitchy are sitting closer to their monitors than the defaults assume.</p>
+
+<h3>It switches to the wrong screen</h3>
+<p>Set your screens up again. Calibration encodes where you sat and where the monitors
+were; nudging a monitor or raising your chair invalidates it. If two monitors are very
+close together, or at nearly the same angle from where you sit, there may not be enough
+difference between them to tell apart reliably — that is a limit of the approach, not a
+setting.</p>
+
+<h3>One app's windows never take focus</h3>
+<p>Some applications decline to let another app focus their windows. Tell us which app
+and which window, and it may be fixable for that app specifically.</p>
+
+<h2>What to include</h2>
+<ul>
+  <li>Your macOS version, and your Mac model.</li>
+  <li>How many displays, roughly where they sit, and which are built in.</li>
+  <li>What the menu bar item says when the problem is happening.</li>
+  <li>What you expected instead.</li>
+</ul>
+
+<h2>Uninstalling</h2>
+<p>Quit Headvane from its menu, then drag it to the Trash. To remove its settings and
+calibration as well, delete the <code>Headvane</code> folder in
+<code>~/Library/Application Support</code>. Revoking Camera and Accessibility access in
+System Settings is worth doing too — macOS keeps those entries after an app is deleted.</p>
+
+</main>
+<footer>
+  <p>Headvane is made by Technoverge. Last updated 12 October 2026.</p>
+  <p>Questions: <a href="mailto:support@headvane.com">support@headvane.com</a></p>
+</footer>
+</div>
+</body>
+</html>
