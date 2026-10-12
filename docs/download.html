@@ -76,14 +76,15 @@ ol{padding-left:22px}
 <p class="sub">macOS 14 Sonoma or later. Apple Silicon and Intel.</p>
 
 <div class="card">
-<p><strong>This is a test build, not a release.</strong> It is not yet notarized by Apple,
-so macOS will refuse to open it and show a warning instead. That is Gatekeeper doing its
-job: an app that has not been notarized has not been checked by anyone.</p>
+<p><strong>This is a test build, not a release.</strong> It is signed by Technoverge, but
+it has not been notarized by Apple yet, so macOS will refuse to open it and show a
+warning instead. That is Gatekeeper doing its job: notarization is Apple confirming it
+scanned the app, and without a ticket nobody has checked this one.</p>
 <p>If you want to try it anyway, the steps are below. If you would rather wait for a
-signed build, that is the sensible choice.</p>
+notarized build, that is the sensible choice.</p>
 </div>
 
-<p><a class="dl" href="https://github.com/mrrussellong/gaze-focus/releases/download/v0.1.0-test/Headvane-0.1.0.dmg">Download Headvane 0.1.0 &middot; 1.1&nbsp;MB</a></p>
+<p><a class="dl" href="https://github.com/mrrussellong/gaze-focus/releases/download/v0.1.1-test/Headvane-0.1.1.dmg">Download Headvane 0.1.1 &middot; 1.2&nbsp;MB</a></p>
 
 <h2>Installing a test build</h2>
 <ol>
@@ -104,9 +105,9 @@ for this. The Privacy &amp; Security panel is the only route.</p>
   <tr><td>Accessibility</td><td>To bring a window forward. This is the only supported way
   on macOS for any app to focus another app's window.</td></tr>
 </table>
-<p>Because this build is not signed with a stable identity, macOS will ask for the
-Accessibility permission again after every update, and leave the old entry behind in the
-list. A signed build fixes that.</p>
+<p>The Accessibility permission is granted to an app's signing identity, so it now
+persists across updates. Earlier builds were signed ad-hoc, which produced a new identity
+every time and made macOS ask again after each update.</p>
 
 <h2>Uninstalling</h2>
 <p>Quit Headvane from its menu and drag it to the Trash. To remove its settings and
