@@ -81,26 +81,22 @@ ol{padding-left:22px}
 <p class="sub">macOS 14 Sonoma or later. Apple Silicon and Intel.</p>
 
 <div class="card">
-<p><strong>This is a test build, not a release.</strong> It is signed by Technoverge, but
-it has not been notarized by Apple yet, so macOS will refuse to open it and show a
-warning instead. That is Gatekeeper doing its job: notarization is Apple confirming it
-scanned the app, and without a ticket nobody has checked this one.</p>
-<p>If you want to try it anyway, the steps are below. If you would rather wait for a
-notarized build, that is the sensible choice.</p>
+<p>Signed by Technoverge and notarized by Apple, so it opens normally — no warning, and
+nothing to click through in System Settings.</p>
+<p>It is still an early build. There is no trial or licence yet, and some things listed
+on this page are not finished.</p>
 </div>
 
-<p><a class="dl" href="https://github.com/mrrussellong/gaze-focus/releases/download/v0.1.1-test/Headvane-0.1.1.dmg">Download Headvane 0.1.1 &middot; 1.2&nbsp;MB</a></p>
+<p><a class="dl" href="https://github.com/mrrussellong/gaze-focus/releases/download/v0.1.2/Headvane-0.1.2.dmg">Download Headvane 0.1.2 &middot; 2.6&nbsp;MB</a></p>
 
-<h2>Installing a test build</h2>
+<h2>Installing</h2>
 <ol>
   <li>Open the downloaded <code>.dmg</code> and drag <strong>Headvane</strong> to
   Applications.</li>
-  <li>Open it once. macOS will block it.</li>
-  <li>Go to <strong>System&nbsp;Settings &rsaquo; Privacy &amp; Security</strong>, scroll
-  down, and click <strong>Open Anyway</strong> next to the message about Headvane.</li>
+  <li>Open it. It will ask for the camera, then walk you through the rest.</li>
 </ol>
-<p class="sub">On macOS&nbsp;15 and later, right-clicking and choosing Open no longer works
-for this. The Privacy &amp; Security panel is the only route.</p>
+<p class="sub">The notarization ticket is stapled to both the disk image and the app, so
+the first launch works even with no network.</p>
 
 <h2>What it will ask for</h2>
 <table>
@@ -110,9 +106,8 @@ for this. The Privacy &amp; Security panel is the only route.</p>
   <tr><td>Accessibility</td><td>To bring a window forward. This is the only supported way
   on macOS for any app to focus another app's window.</td></tr>
 </table>
-<p>The Accessibility permission is granted to an app's signing identity, so it now
-persists across updates. Earlier builds were signed ad-hoc, which produced a new identity
-every time and made macOS ask again after each update.</p>
+<p>The Accessibility permission is granted to an app's signing identity, so it persists
+across updates rather than being asked for again each time.</p>
 
 <h2>Uninstalling</h2>
 <p>Quit Headvane from its menu and drag it to the Trash. To remove its settings and
